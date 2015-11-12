@@ -1,14 +1,31 @@
 Ext.application({
     name: 'HelloExt',
-    launch: function() {
+    launch: function () {
+
+      //  requires
+
+
+
         Ext.create('Ext.container.Viewport', {
             layout: 'fit',
             items: [
                 {
-                    title: 'Приложение на Ext JS 4',
-                    html : '<h3>Добро пожаловать в мир Ext JS 4!</h3>'
-                }
-            ]
+                    xtype: 'container',
+                    width: 500,
+                    height: 400,
+                    layout: 'border',
+                    items: [
+                        {
+                           // xtype: 'panel',
+                            width: 400,
+                            height: 300,
+                            title:'auth',
+                          //  layout: 'border',
+                            region:'center'
+
+
+                    }]
+                },]
         });
     }
 });
