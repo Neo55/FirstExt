@@ -13,15 +13,32 @@ Ext.application({
                     xtype: 'container',
                     width: 500,
                     height: 400,
-                    layout: 'border',
+                    layout: {
+                        type: 'center'
+                    },
+                    
                     items: [
                         {
-                           // xtype: 'panel',
-                            width: 400,
-                            height: 300,
-                            title:'auth',
-                          //  layout: 'border',
-                            region:'center'
+                            xtype: 'panel',
+                            width: 300,
+                            height: 250,
+                            title: 'Авторизация',
+                            defaultMargins:5,
+                            items: [
+                                {
+                                    xtype: 'textfield',
+                                    fieldLabel: 'Login'
+                                },
+                                {
+                                    xtype: 'textfield',
+                                    fieldLabel: 'Password'
+                                },
+                                {
+                                    xtype: 'button',
+                                    text: 'Ok'
+                                }
+                            ]
+                            
 
 
                     }]
