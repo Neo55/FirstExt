@@ -1,48 +1,23 @@
-Ext.application({
-    name: 'HelloExt',
+п»їExt.application(
+{
+    name: 'Test application',
+
+    requires:
+        [
+            'App.View.Auth.MainPanel',
+            'App.View.Peoples.MainPanel'
+        ],
+
     launch: function () {
-
-      //  requires
-
-
-
-        Ext.create('Ext.container.Viewport', {
-            layout: 'fit',
-            items: [
+        Ext.create('Ext.container.Viewport',
+        {
+            layout: 'center',
+            items:
+            [
                 {
-                    xtype: 'container',
-                    width: 500,
-                    height: 400,
-                    layout: {
-                        type: 'center'
-                    },
-                    
-                    items: [
-                        {
-                            xtype: 'panel',
-                            width: 300,
-                            height: 250,
-                            title: 'Авторизация',
-                            defaultMargins:5,
-                            items: [
-                                {
-                                    xtype: 'textfield',
-                                    fieldLabel: 'Login'
-                                },
-                                {
-                                    xtype: 'textfield',
-                                    fieldLabel: 'Password'
-                                },
-                                {
-                                    xtype: 'button',
-                                    text: 'Ok'
-                                }
-                            ]
-                            
-
-
-                    }]
-                },]
+                     xtype: 'mainPanelAuth'
+                }
+            ]
         });
     }
 });

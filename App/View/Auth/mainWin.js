@@ -1,6 +1,30 @@
 ﻿Ext.define('App.view.auth.MainWin', {
-        alias: 'widget.personpanel',
         extend: 'Ext.panel.Panel',
-        title: 'Персональная панель',
-        html : 'Новая панель'
-    });
+        alias: 'widget.personpanel',
+
+            width: 500,
+            height: 360,
+            padding: 10,
+            layout: 'border',
+            items: [
+                {
+                    xtype: 'carGridView',
+                    region: 'center'
+                },
+                {
+                    xtype: 'panel',
+                    html: '<div style="font: normal 18px cursive"><center><font size = "10">Каталог автомобилей</font></center></div>',
+                    region: 'north',
+                    height: 80
+                },
+                {
+                    xtype: 'searchCarView',
+                    title: 'Поиск',
+                    region: 'west',
+                    width: 300,
+                    collapsible: true,
+                    collapsed: false
+                }
+            ],
+            renderTo: Ext.getBody()
+        });
