@@ -1,9 +1,21 @@
 ﻿Ext.define('App.View.Peoples.MainPanel', {
-    extend: 'Ext.window.Window',
-    alias: 'widget.peoplesPanel',
-
-    title:'Main Panel for peoples',
-    width: 500,
-    height:300
-
-})
+    renderTo: Ext.getBody(),
+    width: 300,
+    height: 230,
+    padding: 10,
+    title: 'Основной контейнер',
+    items: [
+        {
+            xtype: 'panel',
+            title: 'Внутренняя панель 1',
+            height: 100,
+            width: '100%'
+        },
+        {
+            xtype: 'panel',
+            title: 'Внутренняя панель 2',
+            height: 100,
+            width: '100%'
+        }
+    ]
+});

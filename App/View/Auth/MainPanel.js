@@ -18,11 +18,11 @@
                                     xtype: 'button',
                                     itemId: 'btnAuthOk',
                                     text: 'Ok',
-                                    handler: function () {
-                                        var dialog = Ext.create('App.View.Peoples.MainPanel');
-                                        dialog.show();
-                                        this.up('panel').close();
-                                    }
+                                    //handler: function () {
+                                    //    var dialog = Ext.create('App.View.Peoples.MainPanel');
+                                    //    dialog.show();
+                                    //    this.up('panel').close();
+                                    //}
                                 }
             ]
     
