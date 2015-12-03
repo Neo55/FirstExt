@@ -2,18 +2,23 @@
 {
     name: 'Test application',
 
-    requires:
-        [
-            'App.View.Auth.MainPanel',
-            'App.View.Peoples.MainPanel',
-            'Ext.controller.auth.Main',
-            'Ext.controller.peoples.Main'
-        ],
+    controllers: [
+    'auth.Main',
+    'peoples.Main'
+    ],
+
+    views: [
+'auth.MainPanel',
+'peoples.MainPanel',
+'auth.MainWin'
+    ],
+    
 
     launch: function () {
         Ext.create('Ext.container.Viewport',
         {
             layout: 'center',
+            autoMaximize : true,
             items:
             [
                 {

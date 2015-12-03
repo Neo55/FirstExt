@@ -1,4 +1,4 @@
-﻿Ext.define('App.View.Auth.MainPanel', {
+﻿Ext.define('App.view.auth.MainPanel', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.mainPanelAuth',
     width: 300,
